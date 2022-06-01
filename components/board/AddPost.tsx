@@ -1,20 +1,12 @@
-import { IArticle } from "@/types";
-import React, { useState } from "react";
-import Article from "./Article";
+import React from "react";
 
-type Props = {
-  write: (e:React.FormEvent, formData: IArticle)=> void
-}
-
-const AddPost: React.FC<Props>=({write})=>{
-    const [formData, setFormData] = useState<IArticle>()
+export default function AddPost(){
+    
     return (
-      <form onSubmit={e => write(e, formData)}>
+      <>
         <h1></h1>
         <h1></h1>
         <button>버튼</button>
-      </form>
+      </>
     );
   };
-
-export default Article
